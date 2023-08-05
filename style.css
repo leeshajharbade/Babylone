@@ -1,0 +1,804 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Teko;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+
+#section1{
+    width: 100%;
+    height: 100vh;
+}
+
+#top{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 1vw 3vw;   
+    /* padding-top: 5vw; */
+    border-bottom: 1px solid #000;
+}
+
+#heading{
+    overflow: hidden;
+}
+
+#heading>h1>span{
+    display: inline-block;
+}
+
+#heading>h1{
+    font-family: Teko;
+    font-size: 10vw;
+}
+
+#nav{
+    position: relative;
+    width: 90%;
+    height: 10vh;
+    padding: 0vw 2vw;
+    background-color: #D29380;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 0.3vw; */
+    z-index: 9;
+}
+
+#left>span{
+    display: inline-block;
+    font-size: 0px;
+    font-weight: 800;
+}
+
+#header{
+    width: 100%;
+    height: 20vh;
+    z-index: 9999;
+}
+
+#nav1{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+}
+
+.sticky{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+#nav1::after{
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 0.8%;
+    width: 88%;
+    height: 10vh;
+    background-color: #D29380;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+#nav a{
+    text-decoration: none;
+    margin-left: 2vw;
+    color: #000;
+    font-size: 1vw;
+}
+
+#right #circle{
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+#bottom{
+    width: 100%;
+    display: flex;
+    padding: 0vw 3vw;
+}
+
+#bleft{
+    width: 60%;
+    height: 95vh;
+    border-bottom: 1px solid #000;
+    font-size: 2.1vw;
+    font-weight: bolder;
+    color: #D29380;
+    padding: 3vw 4vw;
+}
+
+#bright{
+    width: 40%;
+    height: 95vh;
+    border-bottom: 1px solid #000;
+}
+
+#btop{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+}
+
+#btopl{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+
+#btopr{
+    width: 50%;
+    height: 100%;
+}
+
+#photo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 34vw;
+    height: 17vw;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/hero-intro-img.jpg);
+    background-size: cover;
+    border: 1px solid #000;
+}
+
+#bbottom{
+    width: 100%;
+    height: 60%;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 2vw 4vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+#section2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#box{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95vw;
+    height: 100vh;
+    border: 1px solid #000;
+    background-color: #A49780;
+}
+
+#bnav{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#c1{
+    width: 2vw;
+    height: 2vw;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#c2{
+    width: 2vw;
+    height: 2vw;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+svg{
+    position: relative;
+    top: 568%;
+    left: -28.5%;
+    width: 3.6vw;
+    height: 4vw;
+    z-index: 99;
+}
+
+#content{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    margin-top: 10vw;
+}
+
+#b1{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+#bb1{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 18vw;
+    height: 21vw;
+    border: 1px solid #000;
+    margin-top: -10vw;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/babylone-agency-founder-1.jpg);
+    background-size: cover;
+}
+
+#b2{
+    width: 30%;
+    height: 100%;
+    font-size: 0.6vw;
+    text-align: right;
+}
+
+#b2>h1{
+    margin-top: 18vw;
+    font-weight: 600;
+}
+
+#b3{
+    width: 40%;
+    height: 100%;
+}
+
+span{
+    display: inline-block;
+}
+
+#b3>h1{
+    font-size: 11vw;
+    text-align: right;
+    margin-top: 3vw;  
+    font-family: "Fixture Condensed SemiBold";
+}
+
+#section3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#savoir1{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    width: 90%;
+    height: 10vh;
+}
+
+#savoir1::after{
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    width: 104%;
+    height: 10vh;
+    background-color: #A49780;
+    border: 1px solid black;
+}
+
+#savoir1::before{
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    width: 102%;
+    height: 10vh;
+    background-color: #A49780;
+    border: 1px solid black;
+}
+
+#savoir{
+    width: 106.7%;
+    height: 10vh;
+    background-color: #A49780;
+    position: absolute;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}   
+
+#savoir::-webkit-scrollbar{
+    display: none;
+}
+
+#savoir i{
+    font-size: 2vw;
+    font-weight: 100;
+    margin-right: 3vw;
+}
+
+#savoir>h1{
+    display: inline-block;
+    color: #000;
+    font-size: 1.4vw;
+    font-weight: 100;
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(calc(-100% - 15px));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#savoir:hover{
+    background-color: black;
+}
+
+#savoir:hover h1{
+    color: white;
+    animation-play-state: paused;
+}
+
+#section4{
+    width: 100%;
+    height: 100vh;
+    margin-top: -15vw;
+    padding: 2vw 2vw;
+}
+
+#mainheading{
+    width: 80vw;
+    height: 8vw;
+    overflow: hidden;
+}
+
+#mainheading>h1{
+    font-size: 6vw;
+}
+
+#para{
+    width: 30vw;
+    height: 12vw;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.848);
+}
+
+#boxes{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+#box1{
+    position: absolute;
+    top: 2%;
+    width: 15vw;
+    height: 15vw;
+    border: 1px solid black;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/LECLERC.png);
+    background-size: cover;
+}
+
+#box2{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 15vw;
+    height: 15vw;
+    border: 1px solid black;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/AMEX.png);
+    background-size: cover;
+}
+
+#box3{
+    position: absolute;
+    top: 2%;
+    left: 40%;
+    width: 15vw;
+    height: 15vw;
+    border: 1px solid black;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/SER.png);
+    background-size: cover;
+}
+
+#box4{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    width: 15vw;
+    height: 15vw;
+    border: 1px solid black;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/SANOFI.png);
+    background-size: cover;
+}
+
+#box5{
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    width: 15vw;
+    height: 15vw;
+    border: 1px solid black;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/COFIDIS.png);
+    background-size: cover;
+}
+
+#section5{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#badge{
+    width: 100%;
+    height: 10vh;
+    background-color: #f8ad67cf;
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+#badge::-webkit-scrollbar{
+    display: none;
+}
+
+#badge i{
+    font-size: 2vw;
+    font-weight: 100;
+    margin-right: 3vw;
+}
+
+#badge>h1{
+    display: inline-block;
+    color: #000;
+    font-size: 1.4vw;
+    font-weight: 100;
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#badge:hover{
+    background-color: black;
+}
+
+#badge:hover h1{
+    color: white;
+    animation-play-state: paused;
+}
+
+#mainbox{
+    position: relative;
+    width: 92vw;
+    height: 55vw;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+}
+
+#nav2{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    padding: 2vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.3vw;
+    z-index: 9;
+}
+
+#circle1{
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+#circle2{
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+#p1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)rotate(-10deg);
+    width: 25vw;
+    height: 28vw;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/Babel-Ambre-Mazzolini%C2%A9Maxime-Huriez-401-WEB-1-303x354.jpg);
+    background-size: cover;
+    z-index: 99;
+}
+
+#p2{
+    position: absolute;
+    top: 32%;
+    left: 27%;
+    transform: rotate(2deg);
+    width: 10vw;
+    height: 13vw;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/Babel-Me%CC%81lanie-Godin%C2%A9Maxime-Huriez-322-WEB-2-303x354.jpg);
+    background-size: cover;
+}
+
+#p3{
+    position: absolute;
+    top: 13%;
+    left: 55%;
+    transform: rotate(7deg);
+    width: 13vw;
+    height: 15vw;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/Babel-Radu-Boata%C2%A9Maxime-Huriez-508-WEB-2-303x354.jpg);
+    background-size: cover;
+}
+
+#p4{
+    position: absolute;
+    top: 53%;
+    left: 28%;
+    transform: rotate(-20deg);
+    width: 18vw;
+    height: 19vw;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/Babel-Nicolas-Martrenchard%C2%A9Maxime-Huriez-538-WEB-2-303x354.jpg);
+    background-size: cover;
+}
+
+#p5{
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: rotate(7deg);
+    width: 13vw;
+    height: 15vw;
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/Babel-Clementine-Villain%C2%A9Maxime-Huriez-453-WEB-1-303x354.jpg);
+    background-size: cover;
+}
+
+#p6{
+    position: absolute;
+    top: 34%;
+    left: 51%;
+    transform: rotate(10deg);
+    width: 13vw;
+    height: 15vw;   
+    background-image: url(https://babylone.fr/wp-content/uploads/2022/06/Babel-Laure-De-Linares%C2%A9Maxime-Huriez-207-WEB-2-303x354.jpg);
+    background-size: cover;
+    z-index: 9;
+}
+
+#notre{
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    font-size: 4vw;
+}
+
+#equipe{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    font-size: 4vw;
+}
+
+#cpara{
+    position: absolute;
+    top: 70%;
+    left: 72%;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#section6{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#badge2{
+    width: 93%;
+    height: 10vh;
+    background-color: #f8ad6778;
+    position: absolute;
+    top: 26%;
+    left: 3.5%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+#badge2::-webkit-scrollbar{
+    display: none;
+}
+
+#badge2 i{
+    font-size: 2vw;
+    font-weight: 100;
+    margin-right: 3vw;
+}
+
+#badge2>h1{
+    display: inline-block;
+    color: #000;
+    font-size: 1.4vw;
+    font-weight: 100;
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#badge2:hover{
+    background-color: black;
+}
+
+#badge2:hover h1{
+    color: white;
+    animation-play-state: paused;
+}
+
+#talk{
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: 99;
+}
+
+#talk::-webkit-scrollbar{
+    display: none;
+}
+
+#talk>h1{
+    display: inline-block;
+    color: #D29380;
+    font-size: 12vw;
+    font-weight: 600;
+    margin-right: 10vw;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#talk .border{
+    -webkit-text-stroke-border: solid;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+
+}
+
+#talk:hover{
+    background-color: black;
+}
+
+#talk:hover h1{
+    color: #D29380;
+    animation-play-state: paused;
+}
+
+#section7{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+#lbox{
+    position: absolute;
+    top: 88%;
+    left: 4%;
+    width: 92vw;
+    height: 23vw;
+    background-color: #D29380;
+    border: 2px solid black;
+}
+
+#lnav{
+    width: 100%;
+    height: 4vw;
+    background-color: #D29380;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+
+#lbottom{
+    padding: 0vw 2vw;
+}
+
+#lbottom>h1{
+    position: absolute;
+    top: 50%;
+    font-size: 10vw;
+}
+
+#lbottom>h3{
+    position: absolute;
+    top: 90%;
+    left: 57%;
+    font-size: 0.8vw;
+}
+
+#arrow{
+    position: absolute;
+    top: 30%;
+    left: 93%;
+}
+
+img{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+}
+
+#section8{
+    position: relative;
+    width: 100%;
+}
